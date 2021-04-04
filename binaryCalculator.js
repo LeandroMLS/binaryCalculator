@@ -17,9 +17,7 @@ function cleanScreen() {
 }
 
 function setOperation(signal) {
-    let re = /^([\d+])/
     firstValor = result.innerHTML
-    console.log(result.innerHTML)
     switch (signal.innerHTML) {
         case "+":
             operation = "Sum"
@@ -33,7 +31,6 @@ function setOperation(signal) {
         default:
             operation = "Div"
     }
-    console.log(firstValor)
     result.innerHTML += signal.innerHTML
 }
 
@@ -46,13 +43,12 @@ function calculator() {
     firstValor = firstValor.reverse()
     secondValor = secondValor.reverse()
 
-    for (let i in firstValor) {firstValor[i] = firstValor[i]*(2**i)}
-    let newFirstValor = firstValor.reduce((accumulator,currentValue) => accumulator + currentValue)
+    for (let i in firstValor) { firstValor[i] = firstValor[i] * (2 ** i) }
+    let newFirstValor = firstValor.reduce((accumulator, currentValue) => accumulator + currentValue)
 
-    for (let i in secondValor) {secondValor[i] = secondValor[i]*(2**i)}
-    let newSecondValor = secondValor.reduce((accumulator,currentValue) => accumulator + currentValue)
+    for (let i in secondValor) { secondValor[i] = secondValor[i] * (2 ** i) }
+    let newSecondValor = secondValor.reduce((accumulator, currentValue) => accumulator + currentValue)
 
-    console.log(secondValor)
     switch (operation) {
         case "Sum":
             answer = newFirstValor + newSecondValor
