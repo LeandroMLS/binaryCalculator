@@ -1,29 +1,52 @@
 body {
-    width: 33%;
+    background-color: lightgreen;
+    text-align: center;
+
+}
+
+section{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border: 5px solid white;
+    background-color: rgba(61, 60, 63, 0.73);
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px 5px black;
 }
 
 #res {
-    background-color: lightgray;
+    background-color: white;
     border: solid black;
     height: 48px;
     font-size: 20px;
+    border-radius: 7px;
 }
-#btn0,#btn1 {
-    background-color: lightgreen;
-    color: brown;
-}
-#btnClr,#btnEql {
-    background-color: darkgreen;
-    color: white;
-}
-#btnSum,#btnSub,#btnMul,#btnDiv {
-    background-color: black;
-    color: red;
-}
+
 #btns button {
     width: 25%;
-    height: 36px;
+    height: 60px;
     font-size: 18px;
-    margin: 0px;
-    float: left;
+    margin: 1px;
+    border: 1px solid black;
+
+}
+
+#btn0,#btn1 {
+    background-color: lightgreen;
+    color: black;
+    border-radius: 9px;
+}
+
+#btnClr,#btnEql {
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+}
+
+#btnSum,#btnSub,#btnMul,#btnDiv {
+    background-color: darkgreen;
+    color: black;
+    border-radius: 100%;
+
 }
