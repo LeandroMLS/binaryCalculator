@@ -1,4 +1,12 @@
+*{
+  padding: 0px;
+  margin:0px;
+  box-sizing: border-box;
+}
+
 body {
+  padding: 32px;
+  height: 100vh;
   background-color: lightgreen;
   background-image: url(imagens/binary-background.jpg);
   background-repeat: no-repeat;
